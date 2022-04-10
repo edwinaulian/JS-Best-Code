@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='refresh' content='30'>
+    <title>Input invallid</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        input:invalid {
+            animation: shake 300ms;
+            color: red;
+            border-color: #6d2306;
+        }
+        @keyframes shake {
+            25% { transform: translate(4px); }
+            50% { transform: translate(-4px); }
+            75% { transform: translate(4px); }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" pattern="[a-z A-Z]*" for="name" placeholder="eg.Edwin Aulia Nugraha" onpaste="return false">
+    </div>
+</body>
+</html>
